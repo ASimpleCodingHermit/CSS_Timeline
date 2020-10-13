@@ -1,22 +1,66 @@
 :root {
-  /* FONT FAMILIES */
-  --ff-primary: 'Source Sans Pro', sans-serif;
-  --ff-secondary: 'Source Code Pro', monospace;
+	/* FONT FAMILIES */
+	--ff-primary: 'Source Sans Pro', sans-serif;
+	--ff-secondary: 'Source Code Pro', monospace;
 
-  /* FONT WEIGHTS */
-  --fw-regular: 300;
-  --fw-bold: 900;
+	/* FONT WEIGHTS */
+	--fw-regular: 300;
+	--fw-bold: 900;
 
-  /* COLORS */
-  --clr-light: #fff;
-  --clr-dark: #303030;
-  --clr-accent: #3acc9b;
+	/* COLORS */
+	--clr-light: #fff;
+	--clr-dark: #303030;
+	--clr-accent: #3acc9b;
 
-  /* FONT SIZES */
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
-  --fs-body: 1rem;
+	/* FONT SIZES */
+	--fs-h1: 3rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
+/* BOX SHADOW */
+	--bs: 0.25em 0.25em 1em rgba(0, 0, 0, 0.7),
+		0.125em 0.125em 0.75em rgba(0, 0, 0, 0.25);
 
-  --bs: 0.25em 0.25em 1em rgba(0, 0, 0, 0.7), 0.125em 0.125em 0.75em rgba(0, 0, 0, 0.25);
+		/*MARGIN SIZES */
+	--margin-1: 10px 0px;
+	--margin-a: 0 auto;
 }
+
+body{
+	font-family: var(--ff-primary);
+	background-color: var(--clr-accent);
+}
+
+p{
+	margin: var(--margin-1);
+}
+
+.container{
+	width: 940px;
+	overflow: auto;
+	margin: auto;
+}
+
+header{
+	background-color: var(--clr-dark);
+	color: var(--clr-light);
+	text-align: center;
+	padding-top: 20px;
+	height: 70px;
+	box-shadow: var(--bs);
+}
+
+footer{
+	background-color: var(--clr-dark);
+	color: var(--clr-light);
+	text-align: center;
+	padding: 10px 0;
+	height: 70px;
+}
+
+#timeline{
+	background: url(/images/line.png) repeat-y 50% 0;
+	min-height: 700px;
+	margin: 20px 0 20px 0;
+}
+
