@@ -17,6 +17,7 @@
 	--fs-h2: 2.25rem;
 	--fs-h3: 1.25rem;
 	--fs-body: 1rem;
+	--fs-p:1.1rem;
 /* BOX SHADOW */
 	--bs: 0.25em 0.25em 1em rgba(0, 0, 0, 0.7),
 		0.125em 0.125em 0.75em rgba(0, 0, 0, 0.25);
@@ -64,3 +65,62 @@ footer{
 	margin: 20px 0 20px 0;
 }
 
+.timeline__block{
+	position: relative;
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 20px;
+}
+
+.timeline__block__year{
+	background: url(images/LG-Bubble.png) no-repeat 50%;
+	display: block;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.timeline__block__year div{
+	color: var(--clr-accent);
+	font-size: var(--fs-p);
+	font-weight: var(--fw-bold);
+	display: block;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.timeline__block__event{
+	background:url(images/SM-Bubble.png) no-repeat top center;
+	margin: auto;
+	width: 100%;
+	overflow: hidden;
+	visibility: visible;
+}
+
+.timeline__block__event > div {
+	width: 45%;
+	position: relative;
+}
+
+.timeline__block__event div div{
+	background-color: var(--clr-dark);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	padding: 15px;
+}
+
+.timeline__block__event div div p{
+	color: var(--clr-light);
+}
+
+.timeline__block__event div div h3{
+	color: var(--clr-accent);
+}
+
+.timeline__block__event__right {
+	
+}
