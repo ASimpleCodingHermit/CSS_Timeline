@@ -13,11 +13,12 @@
 	--clr-accent: #3acc9b;
 
 	/* FONT SIZES */
-	--fs-h1: 3rem;
-	--fs-h2: 2.25rem;
-	--fs-h3: 1.25rem;
-	--fs-body: 1rem;
-	--fs-p:1.1rem;
+	--fs-h1: 3rem;  /* 48px */
+	--fs-h2: 2.25rem; /* 36px */
+	--fs-h3: 1.875rem; /* 30px */
+	--fs-h4: 1.5rem; /* 24px */
+	--fs-body: 1.125rem; /* 18px */
+	--fs-p:1rem;/* 16px */
 /* BOX SHADOW */
 	--bs: 0.25em 0.25em 1em rgba(0, 0, 0, 0.7),
 		0.125em 0.125em 0.75em rgba(0, 0, 0, 0.25);
@@ -30,6 +31,7 @@
 body{
 	font-family: var(--ff-primary);
 	background-color: var(--clr-accent);
+	font-size: 16px;
 }
 
 p{
@@ -121,6 +123,56 @@ footer{
 	color: var(--clr-accent);
 }
 
-.timeline__block__event__right {
-	
+.timeline__block__event__right{
+	float:right;
+	background:url(images/Arrow-Left.png)no-repeat 0 0;
+}
+
+.timeline__block__event__right div{
+	margin-left: 20px;
+}
+
+.timeline__block__event__left{
+	float:left;
+	background:url(images/Arrow-Right.png)no-repeat top right;
+}
+
+.timeline__block__event__left div{
+	margin-right: 20px;
+}
+
+.timeline__block__event time{
+	background-color: var(--clr-accent);
+	color: var(--clr-dark);
+	font-size: var(--fs-body);
+	padding: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+/* MEDIA QUERIES */
+@media(max-width: 768px){
+	.container {
+		width: 90%;
+	}
+	header {
+		height: 50px;
+	}
+	h1{
+		font-size: var(--fs-h4);
+	}
+	#timeline {
+		background:url(/images/line.png)repeat-y 0 0;
+	}
+	.timeline__block__year{
+		background: url(images/LG-Bubble.png) no-repeat 0 0;
+		text-align: left;
+		margin: 0;
+	}
+	.timeline__block__event{
+		background:url(images/SM-Bubble.png) no-repeat 1rem 0;
+	}
 }
