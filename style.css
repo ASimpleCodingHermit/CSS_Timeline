@@ -98,6 +98,14 @@ footer{
 	width: 100%;
 	overflow: hidden;
 	visibility: visible;
+	animation: fade;
+	-webkit-animation: fade;
+	animation-duration: 2s;
+}
+
+@keyframes fade{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
 }
 
 .timeline__block__event > div {
@@ -161,11 +169,12 @@ footer{
 	header {
 		height: 50px;
 	}
+
 	h1{
 		font-size: var(--fs-h4);
 	}
 	#timeline {
-		background:url(/images/line.png)repeat-y 0 0;
+		background:url(/images/line.png)repeat-y 30px 0;
 	}
 	.timeline__block__year{
 		background: url(images/LG-Bubble.png) no-repeat 0 0;
@@ -174,5 +183,18 @@ footer{
 	}
 	.timeline__block__event{
 		background:url(images/SM-Bubble.png) no-repeat 1rem 0;
+	}
+	.timeline__block__event div{
+		width: 85%;
+		position: relative;
+
+	}
+	.timeline__block__event__left{
+		float:right;
+		background:url(images/Arrow-Left.png)no-repeat 0 0;
+	}
+	.timeline__block__event__left div{
+		margin-left: 20px;
+		margin-right: 0;
 	}
 }
